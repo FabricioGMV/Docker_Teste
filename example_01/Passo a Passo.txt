@@ -1,0 +1,19 @@
+No terminal, navegue até a pasta onde estão os arquivos Dockerfile, docker-compose.yml, app.py e create_db.py.
+
+Criar banco e dados:
+
+python create_db.py
+
+
+Construir imagem Docker:
+
+docker build -t empresa_dashboard .
+
+Rodar o contêiner:
+
+docker run -p 8000:8000 empresa_dashboard
+
+
+Depois de alguns segundos, o seu aplicativo Flask estará disponível em http://localhost:8000.
+
+apos a utilização dele a aquivo company_db
